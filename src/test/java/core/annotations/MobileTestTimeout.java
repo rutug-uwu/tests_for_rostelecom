@@ -1,4 +1,4 @@
-package annotations;
+package core.annotations;
 
 import org.junit.jupiter.api.Timeout;
 

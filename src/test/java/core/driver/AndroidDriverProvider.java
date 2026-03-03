@@ -1,4 +1,4 @@
-package driver;
+package core.driver;
 
 import com.codeborne.selenide.WebDriverProvider;
 
@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 
 import java.net.URL;
 
-import config.Config;
+import core.config.Config;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 

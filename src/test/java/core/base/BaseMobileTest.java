@@ -1,4 +1,4 @@
-package tests;
+package core.base;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
@@ -11,8 +11,8 @@ import org.junit.jupiter.api.BeforeEach;
 import java.util.List;
 import java.util.Map;
 
-import config.Config;
-import driver.AndroidDriverProvider;
+import core.config.Config;
+import core.driver.AndroidDriverProvider;
 import io.appium.java_client.android.AndroidDriver;
 
 public class BaseMobileTest {

@@ -1,6 +1,6 @@
 package alchemy.tests;
 
-import tests.BaseMobileTest;
+import core.base.BaseMobileTest;
 
 public class BaseAlchemyTest extends BaseMobileTest {
     private static final String ALCHEMY_PACKAGE = "com.ilyin.alchemy";

@@ -13,7 +13,7 @@ import alchemy.pages.AlchemyMainMenuPage;
 import alchemy.pages.AlchemyPlayMenuPage;
 import alchemy.pages.components.AlchemyHintsDrawer;
 import alchemy.steps.AlchemyMobileSteps;
-import annotations.MobileTestTimeout;
+import core.annotations.MobileTestTimeout;
 
 @MobileTestTimeout
 public class AlchemyHintByAdTest extends BaseAlchemyTest {

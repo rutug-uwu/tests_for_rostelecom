@@ -1,14 +1,12 @@
 package vkvideo.tests;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Condition.visible;
 import static vkvideo.common.constants.VkVideoTestConstants.TIMEOUT;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import annotations.MobileTestTimeout;
+import core.annotations.MobileTestTimeout;
 import vkvideo.pages.VkVideoMainPage;
 import vkvideo.pages.VkVideoPlayerPage;
 import vkvideo.pages.VkVideoProfilePage;

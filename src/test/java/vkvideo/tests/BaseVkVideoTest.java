@@ -1,6 +1,6 @@
 package vkvideo.tests;
 
-import tests.BaseMobileTest;
+import core.base.BaseMobileTest;
 
 public class BaseVkVideoTest extends BaseMobileTest {
 
