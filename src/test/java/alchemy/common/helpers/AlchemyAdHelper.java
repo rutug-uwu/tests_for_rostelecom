@@ -9,10 +9,10 @@ import org.openqa.selenium.By;
 import java.time.Duration;
 
 public class AlchemyAdHelper {
-    public static boolean waitForAd(int seconds) {
+    public static boolean waitForAd(Duration timeout) {
         try {
             Selenide.$(By.xpath("//*[@text='reward granted' or @text='Reward granted' or @text='REWARD GRANTED']"))
-                    .shouldBe(visible, Duration.ofSeconds(seconds));
+                    .shouldBe(visible, timeout);
             return true;
         } catch (AssertionError e) {
             return false;

@@ -7,6 +7,6 @@ public class AlchemyTestConstants {
     }
 
     public static final int HINTS_PER_AD = 2;
-    public static final int AD_WATCH_TIMEOUT_SECONDS = 60;
-    public static final Duration AD_BUTTON_TIMEOUT = Duration.ofSeconds(30);
+    public static final Duration AD_WATCH_TIMEOUT_SECONDS = Duration.ofSeconds(60);
+    public static final Duration AD_BUTTON_TIMEOUT = Duration.ofSeconds(60);
 }

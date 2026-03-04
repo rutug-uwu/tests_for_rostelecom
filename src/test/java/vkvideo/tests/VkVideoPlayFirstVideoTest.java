@@ -1,6 +1,6 @@
 package vkvideo.tests;
 
-import static vkvideo.common.constants.VkVideoTestConstants.TIMEOUT;
+import static vkvideo.common.constants.VkVideoTestConstants.APP_TIMEOUT;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
@@ -22,14 +22,14 @@ public class VkVideoPlayFirstVideoTest extends BaseVkVideoTest {
     @Test
     @DisplayName("Позитивный: Видео должно воспроизводиться при наличии интернета")
     void shouldPlayVideoSuccessfullyTest() {
-        authPopup.tapSkipButton(TIMEOUT);
+        authPopup.tapSkipButton(APP_TIMEOUT);
 
-        String expectedTitle = main.getFirstVideoTitle(TIMEOUT);
-        main.openFirstVideo(TIMEOUT);
+        String expectedTitle = main.getFirstVideoTitle(APP_TIMEOUT);
+        main.openFirstVideo(APP_TIMEOUT);
 
-        videoPlayer.shouldBePlayerOpened(TIMEOUT);
+        videoPlayer.shouldBePlayerOpened(APP_TIMEOUT);
 
-        String actualTitle = videoPlayer.getVideoTitle(TIMEOUT);
+        String actualTitle = videoPlayer.getVideoTitle(APP_TIMEOUT);
         Assertions.assertEquals(expectedTitle, actualTitle);
     }
 
@@ -38,7 +38,7 @@ public class VkVideoPlayFirstVideoTest extends BaseVkVideoTest {
     void videoShouldNotPlayWithoutInternetTest() {
         withAllNetworksDisabled(() -> {
             restartApp();
-            profile.verifyOfflineModeDisplayed(TIMEOUT);
+            profile.verifyOfflineModeDisplayed(APP_TIMEOUT);
         });
     }
 }

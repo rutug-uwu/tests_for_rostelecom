@@ -7,5 +7,5 @@ public class VkVideoTestConstants {
     private VkVideoTestConstants() {
     }
 
-    public static final Duration TIMEOUT = Duration.ofSeconds(30);
+    public static final Duration APP_TIMEOUT = Duration.ofSeconds(30);
 }

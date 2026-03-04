@@ -4,8 +4,6 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.appium.SelenideAppium.$;
 
-import static vkvideo.common.constants.VkVideoTestConstants.TIMEOUT;
-
 import com.codeborne.selenide.SelenideElement;
 
 import org.openqa.selenium.By;
